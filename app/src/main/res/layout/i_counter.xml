@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="?selectableItemBackground"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/counter_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        tools:text="Counter name"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@drawable/counter_item_bg"
+       android:gravity="center_vertical"
+       android:orientation="horizontal">
+       
+       <TextView
+           android:id="@+id/i_counter_minus"
+           android:layout_width="80dp"
+           android:layout_height="80dp"
+           android:text="−"
+           android:textSize="40dp"
+           android:textColor="#fff"
+           android:background="?selectableItemBackgroundBorderless"
+           android:gravity="center"/>
+       
+       <TextView
+           android:id="@+id/counter_value"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           tools:text="13456"
+           android:layout_weight="1"
+           android:layout_marginTop="1dp"
+           android:layout_marginBottom="1dp"
+           android:padding="16dp"
+           android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+           android:background="?android:colorBackground"
+           android:gravity="center"/>
+
+       <TextView
+           android:id="@+id/i_counter_plus"
+           android:textSize="40dp"
+           android:layout_width="80dp"
+           android:layout_height="80dp"
+           android:text="+"
+           android:textColor="#fff"
+           android:background="?selectableItemBackgroundBorderless"
+           android:gravity="center"/>
+       
+       
+   </LinearLayout>
+       
+
+</LinearLayout>
